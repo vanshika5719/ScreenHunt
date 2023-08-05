@@ -1,0 +1,226 @@
+.create-account {
+    position: absolute;
+    top: 55px;
+    left: 305px;
+    font-size: 45px;
+    font-weight: 800;
+  }
+  .create-account1 {
+    position: relative;
+    font-size: large;
+    font-weight: 800;
+    font-family: Inter;
+    color: white;
+    text-align: left;
+  }
+  .create-account-wrapper {
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+    background-color: #b31312;
+    position: absolute;
+    top: 85%;
+    left: 393px;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 178px;
+    height: 47px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .component-1-child {
+    border: 1px solid darkslateblue;
+    background-color: white;
+    position: absolute;
+    height: 74.24%;
+    width: 100%;
+    top: 25.76%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--br-3xs);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .first-name {
+    position: relative;
+  }
+  .first-name-wrapper {
+    position: absolute;
+    height: 36.36%;
+    width: 18.83%;
+    top: 0;
+    right: 70.87%;
+    bottom: 63.64%;
+    left: 10.3%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .component-1 {
+    position: absolute;
+    top: 25%;
+    left: 198px;
+    width: 563px;
+    height: 66px;
+  }
+  .first-name-container {
+    position: absolute;
+    height: 36.36%;
+    width: 9.41%;
+    top: 0;
+    right: 75.57%;
+    bottom: 63.64%;
+    left: 15.01%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .component-31 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .component-3 {
+    position: absolute;
+    top: 47%;
+    left: 198px;
+    width: 563px;
+    height: 66px;
+  }
+  .first-name-frame {
+    position: absolute;
+    height: 36.36%;
+    width: 17.09%;
+    top: 0;
+    right: 71.74%;
+    bottom: 63.64%;
+    left: 11.17%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .component-41 {
+    position: absolute;
+    height: 100%;
+    width: 112.38%;
+    top: 0;
+    right: -12.38%;
+    bottom: 0;
+    left: 0;
+  }
+  .component-4,
+  .frame-div {
+    position: absolute;
+    top: 58%;
+    left: 198px;
+    width: 505px;
+    height: 66px;
+  }
+  .frame-div {
+    height: 36.36%;
+    width: 18.47%;
+    top: 0;
+    right: 71.05%;
+    bottom: 63.64%;
+    left: 10.48%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .component-21 {
+    position: absolute;
+    height: 100%;
+    width: 158.59%;
+    top: 0;
+    right: -58.59%;
+    bottom: 0;
+    left: 0;
+  }
+  .component-2 {
+    position: absolute;
+    top: 36%;
+    left: 198px;
+    width: 355px;
+    height: 66px;
+  }
+  .subscriptions {
+    position: absolute;
+    top: 75%;
+    left: 100px;
+  }
+  .information,
+  .select-interest {
+    position: absolute;
+    top: 80%;
+    left: 100px;
+  }
+  .information {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    top: 0;
+    left: 40%;
+    border-radius:50px 0px 0px 50px;
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .vector-icon {
+    position: absolute;
+    top: 58%;
+    left: 10%;
+    width: 60%;
+    height: 75%;
+  }
+  .vector-icon1 {
+    position:absolute;
+    top: -150px;
+    left: -210px;
+    width: 597.26px;
+    height: 577.14px;
+  }
+  .your-ultimate-destination {
+    position: absolute;
+    top: 45%;
+    left: 101px;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    width: 275px;
+    height: 344px;
+  }
+  .screenhunt-1-icon {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 464px;
+    height: 189px;
+    object-fit: cover;
+  }
+  .desktop-1 {
+    position: fixed;
+    background-color: #ea906c;
+    width: 99%;
+    height: 100%;
+    overflow: hidden;
+    text-align: left;
+    font-size: large;
+    color: darkslateblue;
+    font-family: Inter;
+  }
+  
