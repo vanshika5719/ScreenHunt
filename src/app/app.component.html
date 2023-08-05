@@ -1,4 +1,6 @@
 
+<router-outlet></router-outlet>
+
 <div class="content" role="main">
 
 
@@ -42,7 +44,7 @@
         </div>
       </div>
       <button class="login-wrapper">
-        <div class="login" (click)="login()">Login</div>
+        <div class="login" routerLink="/sign-up">Login</div>
       </button>
     </div>
     <img class="vector-icon" alt="" src="./../assets//images/vector.svg" />
@@ -61,4 +63,4 @@
 
 </div>
 
-<router-outlet></router-outlet>
+

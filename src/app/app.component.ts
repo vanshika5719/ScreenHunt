@@ -7,7 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ScreenHunt';
-  login(){
-    alert("alert the login component");
-  }
+ 
 }
