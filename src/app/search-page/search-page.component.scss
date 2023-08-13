@@ -1,0 +1,215 @@
+.home-page-child,
+.screenhunt-1-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.home-page-child {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+.screenhunt-1-icon {
+  width: 246px;
+  height: 70px;
+}
+.span {
+  color: #000;
+}
+.home {
+  position: relative;
+  font-weight: 600;
+}
+.iconlyboldprofile {
+  position: relative;
+  width: 38px;
+  height: 41px;
+}
+.navbar-link {
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 1020px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 48px;
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  color: var(--color-darkslateblue-100);
+  font-family: var(--font-lato);
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 1440px;
+  height: 61px;
+}
+.search-item {
+  border: 1px solid var(--color-darkslateblue-100);
+  background-color: rgba(43, 42, 76, 0.58);
+  position: absolute;
+  top: 171px;
+  left: 478px;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  width: 483px;
+  height: 50px;
+  padding-right: 40px; 
+  font-size: 20px;
+  color: #cac7ff;
+}
+
+.search-btn {
+  position: absolute;
+  top: 171px;
+  left: 910px;  /* 478px (search bar left position) + 483px (search bar width) - 40px (button width) = 921px */
+  width: 40px;
+  height: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.searchicon {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  margin: auto; /* Center the icon inside the button */
+  display: block;
+  color: #cac7ff;
+}
+::placeholder{
+  color: #cac7ff;
+}
+
+.recommended-for-you,
+.trending-movies {
+  margin: 0;
+  position: absolute;
+  top: 383px;
+  left: -1px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  width: 286px;
+}
+.recommended-for-you {
+  margin: 40px 0 20px 0; /* Adjust these values as needed */
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  width: 286px;
+}
+
+.recommendation-section {
+  padding: 20px; /* Adjust as needed */
+}
+
+.trending-movies {
+  top: 706px;
+  left: 0;
+}
+
+.home-page {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-firebrick);
+  font-family: var(--font-lato);
+}
+
+
+.wrapper {
+  top: 450px;
+  padding-top: 20px;
+  width: 100%;
+  position: absolute;
+  margin: 0 auto; /* Center the wrapper */
+}
+
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 5) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  border-radius: 8px;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 250px;
+  list-style: none;
+  cursor: pointer;
+  flex-direction: column;
+}
+.carousel .card .img {
+  background: #8B53FF;
+  height: 100%;
+  width: 100%;
+  
+}
+.card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
