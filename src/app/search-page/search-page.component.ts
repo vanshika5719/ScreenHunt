@@ -8,4 +8,34 @@ import { Component,OnInit } from '@angular/core';
 export class SearchPageComponent implements OnInit {
   ngOnInit(): void {
   }
+
+  toSection3(){
+    let x= document.querySelector("#section3");
+    if(x){
+      x.scrollIntoView({
+        behavior:'smooth',
+      }
+      )
+    }
+  }
+
+  toSection2(){
+    let x= document.querySelector("#section2");
+    if(x){
+      x.scrollIntoView({
+        behavior:'smooth',
+      }
+      )
+    }
+  }
+
+  toSection1(){
+    let x= document.querySelector("#section1");
+    if(x){
+      x.scrollIntoView({
+        behavior:'smooth',
+      }
+      )
+    }
+  }
 }
