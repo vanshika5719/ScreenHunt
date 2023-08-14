@@ -2,26 +2,26 @@
 .hbo-max-1590590561-1-icon,
 .netflix1-1-icon {
   position: relative;
-  border-radius: 5px;
-  width: 60.8.8px;
-  height: 63px;
+  border-radius: 0.5%;
+  width: 6.08%;
+  height: 6.3%;
 }
 .disney-1-icon,
 .hbo-max-1590590561-1-icon {
-  width: 59px;
+  width: 5.9%;
 }
 .hbo-max-1590590561-1-icon {
-  width: 63px;
+  width: 6.3%;
 }
 .frame-icons {
   position: fixed;
-  top: 90%;
-  left: 590px;
+  top: 84%;
+  left: 43%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 31px; 
+  gap: 3.1%;
 }
 .footer {
   position: fixed;
@@ -29,21 +29,13 @@
   left: 0;
   background-color: transparent;
   width: 100%;
-  height: 256px;
+  height: 25.6%; 
 }
 .div-1-icon {
   position: fixed;
-  top: 40%;
-  left: 35px;
-  width: 48%;
-}
-.nav-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  width: 100%;
-  height: 80px;
+  top: 25.5%;
+  left: 8%; 
+  width: 40%;
 }
 
 .bg_img,
@@ -53,32 +45,37 @@
   left: 0;
   object-fit: cover;
 }
-.bg_img{
+.bg_img {
   opacity: 0.1;
+  width: 100%;
+  height: 100%;
 }
-.screenhunt-1-icon {
-  width: 287px;
-  height: 70px;
+.screenhunt-1-icon { 
+  height: 8%;
+  width: 13%; 
 }
 .others,
 .showing-content-from {
   position: fixed;
-  font-size:large;
+  font-size: small;
 }
 .showing-content-from {
-  top: 90%;
-  left: 642px;
+  top: 80%;
+  left: 43%; 
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 223px;
-  height: 38px;
+  width: 15%; 
+  height: 2.8%; 
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: #252525;
 }
 .others {
-  top: 90%;
-  left: 930px;
+  top: 85.5%;
+  left: 54%;
   text-align: left;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: #252525;
 }
 .openai-inc-all {
   margin: 0;
@@ -89,8 +86,8 @@
 }
 .openai-inc-all-container {
   position: fixed;
-  top: 95%px;
-  left: 10px;
+  top: 96%;
+  left: 1%; 
   letter-spacing: 0.02em;
   display: flex;
   color: gray;
@@ -100,8 +97,8 @@
 .your-ultimate-destination {
   position: fixed;
   top: 25%;
-  left: 809px;
-  font-size: 40px;
+  left: 55%; 
+  font-size: 300%;
   display: flex;
   color: firebrick;
   align-items: center;
@@ -109,21 +106,22 @@
 }
 .landing-page-child {
   position: absolute;
-  top: 181px;
-  left: 741px;
+  top: 18%;
+  left: 50%;
   filter: blur(4px);
-  border-right: 4px solid darksalmon;
+  border-right: 4px solid #ea906c;
   box-sizing: border-box;
-  width: 4px;
-  height: 533px;
+  width: 3px;
+  height: 55%;
 }
 .button {
   position: relative;
-  font-size: var(--font-size-11xl);
-  font-weight: 800;
-  font-family: var(--font-lato);
-  color: var(--color-linen);
+  font-size: 80%;
+  font-weight: 500;
+  font-family: Inter;
+  color: #eee2de;
   text-align: center;
+  width: 60px;
 }
 .button-wrapper,
 .frame-button {
@@ -135,16 +133,15 @@
 .button-wrapper {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-3xs) var(--padding-xl);
+  padding: 10px 20px;
   background-color: darksalmon;
-  border-radius: var(--br-21xl);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
 }
 .frame-button {
   position: fixed;
-  top: 75%;
-  left: 941px;
-  gap: 29px;
+  top: 65%;
+  left: 65.5%; 
+  gap: 4%; 
 }
 .about-us,
 .identify-the-platform {
@@ -154,40 +151,38 @@
   justify-content: center;
 }
 .identify-the-platform {
-  top: 45%;
-  left: 777px;
-  font-size: 25px;
+  top: 43%;
+  left: 60%; 
+  font-size: 100%;
   font-weight: 300;
   color: firebrick;
 }
 .about-us {
-  top: 8px;
-  left: calc(50% + 660px);
-  font-weight: 600;
-  color: rgba(43, 42, 76, 0.7);
-  width: 85px;
-  height: 27px;
+  top: 0.8%; 
+  left: 93%; 
+  font-weight: 200;
+  color: gray;
+  width: 8.5%; 
+  height: 2.7%; 
 }
 .send-feedback {
   position: absolute;
-  top: 992px;
-  left: calc(50% + 600px);
+  top: 95%; 
+  left: 83%; 
   display: inline-block;
   color: gray;
   text-align: right;
-  width: 154px;
-  height: 32px;
+  width: 15.4%; 
+  height: 3.2%; 
 }
 .landing-page {
   position: fixed;
   background-color: #fff;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  width: 99%;
+  width: 100%;
   height: 100%;
   overflow: hidden;
   text-align: center;
-  font-size:small;
+  font-size: small;
   color: gray;
-  font-family:Inter;
+  font-family: Inter;
 }
-
