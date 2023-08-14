@@ -1,91 +1,115 @@
 .result-wrap-icon {
-    position: absolute;
-    top: 20px;
-    left: 55px;
-    width: 400px;
-    height: 650px;
-    object-fit: cover;
-    border-radius: 30px 30px ;
+  position: absolute;
+  top: 10%;
+  left: 4.86%;
+  width: 50%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 1.56% 1.56%;
+}
+.movie-discription,
+.movie-name {
+  border: 0;
+  font-family: Inter;
+  background-color: transparent;
+  position: absolute;
+  color: darkslateblue;
+}
+.movie-name {
+  font-weight: 800;
+  font-size: 300%; /* Font sizes are typically not converted to percentages */
+  top: 10%;
+  left: 45%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31.25%;
+  height: 9.26%;
+}
+.movie-discription {
+  font-weight: 500;
+  font-size: 200%; /* Font sizes are typically not converted to percentages */
+  top: 18%;
+  left: 40%;
+  text-align: left;
+  display: inline-block;
+  width: 31.25%;
+  height: 18.52%;
+}
+.cast,
+.genre,
+.rating,
+.release-date {
+  cursor: pointer;
+  position: absolute;
+  top: 33.24%;
+  left: 40%;
+  display: inline-block;
+  width: 32.6%;
+  height: 3.89%;
+  color: darkslateblue;
+}
+.genre,
+.rating,
+.release-date {
+  top: 38.15%;
+}
+.rating,
+.release-date {
+  top: 43.06%;
+}
+.rating {
+  top: 47.96%;
+}
+.platforms-available1 {
+  margin: 0;
+}
+.platforms-available {
+  cursor: pointer;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  width: 17.29%;
+  height: 9.07%;
+  color: darkslateblue;
+}
+.result-page {
+  position: fixed;
+  background: linear-gradient(229deg, #fff, #252525);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-9xl); /* Custom CSS variables are not converted */
+  color: #252525;
+  font-family: Inter;
+}
+
+$bkBtnSize: 30px;
+.bk-btn {
+  height: $bkBtnSize;
+  width: $bkBtnSize;
+  border-radius: 50%;
+  .bk-btn-triangle {
+    position: relative;
+    top: $bkBtnSize*0.25;
+    left: $bkBtnSize*0.2;
+    width: 0; 
+    height: 0; 
+    border-top: $bkBtnSize*0.25 solid transparent;
+    border-bottom: $bkBtnSize*0.25 solid transparent; 
+    border-right: $bkBtnSize*0.25 solid white; 
   }
-  .movie-discription,
-  .movie-name {
-    border: 0;
-    font-family: var(--font-lato);
-    background-color: transparent;
-    position: absolute;
-    color: var(--color-darkslateblue);
+  .bk-btn-bar {
+    position: relative;
+    background-color: white;
+    height: $bkBtnSize*0.15;
+    width: $bkBtnSize*0.25;
+    top: $bkBtnSize*-0.07;
+    left: $bkBtnSize*0.44;
   }
-  .movie-name {
-    font-weight: 800;
-    font-size: 48px;
-    top: 39px;
-    left: 670px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 600px;
-    height: 100px;
-  }
-  .movie-discription {
-    font-weight: 500;
-    font-size: 32px;
-    top: 150px;
-    left: 626px;
-    text-align: left;
-    display: inline-block;
-    width: 600px;
-    height: 200px;
-  }
-  .cast,
-  .genre,
-  .rating,
-  .release-date {
-    cursor: pointer;
-    position: absolute;
-    top: 359px;
-    left: 670px;
-    display: inline-block;
-    width: 626px;
-    height: 42px;
-    color: var(--color-darkslateblue);
-  }
-  .genre,
-  .rating,
-  .release-date {
-    top: 412px;
-  }
-  .rating,
-  .release-date {
-    top: 465px;
-  }
-  .rating {
-    top: 518px;
-  }
-  .platforms-available1 {
-    margin: 0;
-  }
-  .platforms-available {
-    cursor: pointer;
-    position: absolute;
-    top: 624px;
-    left: 871px;
-    font-weight: 600;
-    text-align: center;
-    display: inline-block;
-    width: 332px;
-    height: 98px;
-    color: var(--color-darkslateblue);
-  }
-  .result-page {
-    position: fixed;
-    background: linear-gradient(229deg, #fff, #252525);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-9xl);
-    color: var(--color-gray);
-    font-family: var(--font-lato);
-  }
-  
+}
