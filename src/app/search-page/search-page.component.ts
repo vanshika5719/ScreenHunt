@@ -38,4 +38,36 @@ export class SearchPageComponent implements OnInit {
       )
     }
   }
+
+
+toSection6(){
+  let x= document.querySelector("#section6");
+  if(x){
+    x.scrollIntoView({
+      behavior:'smooth',
+    }
+    )
+  }
+}
+
+toSection5(){
+  let x= document.querySelector("#section5");
+  if(x){
+    x.scrollIntoView({
+      behavior:'smooth',
+    }
+    )
+  }
+}
+
+toSection4(){
+  let x= document.querySelector("#section4");
+  if(x){
+    x.scrollIntoView({
+      behavior:'smooth',
+    }
+    )
+  }
+}
+
 }
