@@ -1,94 +1,109 @@
 <div class="desktop-1">
     <div class="information">
-        <div class="create-account">Create Account</div>
-        <button class="create-account-wrapper">
-            <div class="create-account1" routerlink="/login">Create Account</div>
-        </button>
-        <div class="component-1">
-            <input class="component-1-child" type="text" maxlength minlength required id="fname"/>
-
-            <div class="first-name-wrapper">
-                <b class="first-name">First Name
-                </b>
-            </div>
+      <div class="create-account">Create Account</div>
+      <button class="create-account-wrapper">
+        <div class="create-account1" routerlink="/login">Create Account</div>
+      </button>
+      <div class="component-1">
+        <input class="component-1-child" type="text" maxlength minlength required id="fname"/>
+        <div class="first-name-wrapper">
+          <b class="first-name">First Name</b>
         </div>
-        <div class="component-3">
-            <div class="component-31">
-                <input class="component-1-child" type="text" maxlength minlength required id="emailid"/>
-
-                <div class="first-name-container">
-                    <b class="first-name">Email</b>
-                </div>
-            </div>
+      </div>
+      <div class="component-3">
+        <div class="component-31">
+          <input class="component-1-child" type="text" maxlength minlength required id="emailid"/>
+          <div class="first-name-container">
+            <b class="first-name">Email</b>
+          </div>
         </div>
-        <div class="component-4">
-            <div class="component-41">
-                <div class="component-31">
-                    <input class="component-1-child" type="password" maxlength minlength required id="pass"/>
-
-                    <div class="first-name-frame">
-                        <b class="first-name">Password</b>
-                    </div>
-                </div>
+      </div>
+      <div class="component-4">
+        <div class="component-41">
+          <div class="component-31">
+            <input class="component-1-child" type="password" maxlength minlength required id="pass"/>
+            <div class="first-name-frame">
+              <b class="first-name">Password</b>
             </div>
+          </div>
         </div>
-        <div class="component-2">
-            <div class="component-21">
-                <input class="component-1-child" type="text" maxlength minlength required id="lname"/>
-
-                <div class="frame-div">
-                    <b class="first-name">Last Name</b>
-                </div>
+      </div>
+      <div class="component-2">
+        <div class="component-21">
+          <input class="component-1-child" type="text" maxlength minlength required id="lname"/>
+          <div class="frame-div">
+            <b class="first-name">Last Name</b>
+          </div>
+        </div>
+      </div>
+      <div class="interest-container">
+        <b class="select-interest"> Interest:</b>
+        <div class="sub-list">
+          <div class="drop-down">
+            <input id="toggle" type="checkbox" class="drop-down-toggle" name="toggle" />
+            <label for="toggle" class="drop-down-label">
+              Select here
+              <div class="arrow">
+                <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.43749 0.987258L8.18749 7.73726L14.9375 0.987257L16.0689 2.11863L8.18749 10L0.306121 2.11863L1.43749 0.987258Z" fill="white"/>
+                </svg>
+              </div>
+            </label>
+            <div class="options">
+              <div class="divider"></div>
+              <div class="option" onclick="selectOption('Action')">Action</div>
+              <div class="divider"></div>
+              <div class="option" onclick="selectOption('Comedy')">Comedy</div>
+              <div class="divider"></div>
+              <div class="option" onclick="selectOption('Horror')">Horror</div>
+              <div class="divider"></div>
+              <div class="option" onclick="selectOption('Romantic')">Romantic</div>
             </div>
+          </div>
         </div>
-
-        <b class="select-interest">Select Interest:</b>
+      </div>
     </div>
     <img class="vector-icon" alt="" src="./../../assets/images/vector.svg"/>
-
     <img class="vector-icon1" alt="" src="./../../assets/images/vector1.svg"/>
-
     <b class="your-ultimate-destination">Your Ultimate destination for movie magic!</b>
     <img class="screenhunt-1-icon" alt="" src="./../../assets/images/screenhunt-1@2x.png"/>
-
     <div class="subs-container">
-        <b class="subscriptions">Subscriptions:</b>
-        <div class="subscription-list">
-            <div class="accordion">
-                <input id="toggle1" type="checkbox" class="accordion-toggle" name="toggle"/>
-
-                <label for="toggle1">
-                    Select here
-                    <div class="open">
-                        <svg width="17" height="10" viewbox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.43749 0.987258L8.18749 7.73726L14.9375 0.987257L16.0689 2.11863L8.18749 10L0.306121 2.11863L1.43749 0.987258Z" fill="white"/>
-                        </svg>
-
-                    </div>
-                </label>
-                <div class="items">
-                    <div class="line"></div>
-                    <label class="item">
-                        Netflix
-                        <input type="checkbox" class="accordion-toggle"/>
-                    </label>
-                    <div class="line"></div>
-                    <label class="item">
-                        HBO
-                        <input type="checkbox" class="accordion-toggle"/>
-                    </label>
-                    <div class="line"></div>
-                    <label class="item">
-                        Amazon Prime
-                        <input type="checkbox" class="accordion-toggle"/>
-                    </label>
-                    <div class="line"></div>
-                    <label class="item">
-                        Hotstar
-                        <input type="checkbox" class="accordion-toggle"/>
-                    </label>
-                </div>
+      <b class="subscriptions">Subscriptions:</b>
+      <div class="subscription-list">
+        <div class="accordion">
+          <input id="toggle1" type="checkbox" class="accordion-toggle" name="toggle"/>
+          <label for="toggle1">
+            Select here
+            <div class="open">
+              <svg width="17" height="10" viewbox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.43749 0.987258L8.18749 7.73726L14.9375 0.987257L16.0689 2.11863L8.18749 10L0.306121 2.11863L1.43749 0.987258Z" fill="white"/>
+              </svg>
             </div>
+          </label>
+          <div class="items">
+            <div class="line"></div>
+            <label class="item">
+              Netflix
+              <input type="checkbox" class="accordion-toggle"/>
+            </label>
+            <div class="line"></div>
+            <label class="item">
+              HBO
+              <input type="checkbox" class="accordion-toggle"/>
+            </label>
+            <div class="line"></div>
+            <label class="item">
+              Amazon Prime
+              <input type="checkbox" class="accordion-toggle"/>
+            </label>
+            <div class="line"></div>
+            <label class="item">
+              Hotstar
+              <input type="checkbox" class="accordion-toggle"/>
+            </label>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+  
