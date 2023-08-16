@@ -2,17 +2,32 @@
   <div class="bk-btn">
     <div class="bk-btn-triangle"></div><div class="bk-btn-bar">
   </div></div>
-    <img class="result-wrap-icon" alt="" src="./public/result_movie@2x.png" />
+    <img class="result-wrap-icon" alt="{{movieDetail.MovieName}}" src="{{movieDetail.poster}}" />
 
-    <input class="movie-name" type="text" placeholder="Movie Name" />
+    <input class="movie-name" type="text" placeholder="{{movieDetail.MovieName}}" />
 
-    <input class="movie-discription" type="text" placeholder="Discription" />
+    <input class="movie-discription" type="text" placeholder="{{movieDetail.Detail}}" />
 
-    <label class="cast" htmlfor="cast">Cast :</label>
-    <label class="genre" htmlfor="genre">Genre : </label>
+    <label class="cast" htmlfor="cast">Cast :{{movieDetail.Cast}}</label>
+    <label class="genre" htmlfor="genre">Genre :{{movieDetail.Genre}} </label>
     <label class="release-date" htmlfor="Release_date">Release Date:</label>
-    <label class="rating" htmlfor="rating">Rating:</label>
+    <label class="rating" htmlfor="rating">Rating:{{movieDetail.Rating}}</label>
     <label class="platforms-available" htmlfor="platforms">
       <p class="platforms-available1">Platforms Available:</p>
+        <img *ngIf="movieDetail.Netflix" class="netflix1-1-icon" alt="" src="./../../assets/images/landing-page/netflix1-1@2x.png" />
+
+        <img *ngIf="movieDetail.Disney" class="disney-1-icon" alt="" src="./../../assets/images/landing-page/disney-1@2x.png" />
+  
+        <img *ngIf="movieDetail.HBO"
+          class="hbo-max-1590590561-1-icon"
+          alt=""
+          src="./../../assets/images/landing-page/hbomax1590590561-1@2x.png"
+        />
+  
+        <img *ngIf="movieDetail.Prime"
+          class="hbo-max-1590590561-1-icon"
+          alt=""
+          src="./../../assets/images/landing-page/prime-1@2x.png"
+        />
     </label>
   </div>
