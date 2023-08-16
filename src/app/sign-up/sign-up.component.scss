@@ -423,10 +423,10 @@
   align-content: center;
   align-self: center;
   justify-content: space-between;
-  height: 60px;
-  padding: 0 10px;
+  height: 35px;
+  padding: 0 20px;
   font-size: 15px;
-  color: #696969;
+  color: darkslateblue;
   font-weight: 600;
   cursor: pointer;
   overflow: hidden;
@@ -445,7 +445,7 @@
 .option {
   display: flex;
   justify-content: space-between;
-  padding: 0 0px 0 0px;
+  padding: 0 15px 0 15px;
   align-items: center;
   height: 60px;
   cursor: pointer;
@@ -465,7 +465,7 @@
   flex-direction: column;
   align-content: center;
   height: auto;
-  padding: 0px;
+  padding: 4px;
   font-size: 15px;
   color: #696969;
   font-weight: 600;
@@ -496,7 +496,7 @@
 
 .interest-container {
   position: absolute;
-  top: 64%;
+  top: 61%;
   left: 55%;
   display: flex;
   align-items: center;
