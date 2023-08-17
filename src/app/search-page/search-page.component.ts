@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ScreenhuntService } from '../services/screenhunt.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { movie } from './movie.interface';
+import { SharedService } from '../services/shared.service';
 
 
 @Component({
@@ -17,11 +18,13 @@ export class SearchPageComponent implements OnInit {
   trendingMovies: movie[]=[];
 
   constructor(private screenhuntService: ScreenhuntService,
+    private sharedService: SharedService,
     private route: ActivatedRoute,
     private router: Router) { }
 
   ngOnInit(): void {
     this.retrieveAllMovies();
+
   }
   retrieveAllMovies(): void {
     this.screenhuntService.getAll()
@@ -48,7 +51,13 @@ export class SearchPageComponent implements OnInit {
         });
   }
 
+  sendId() {
+    this.sharedService.changeId(7);
+  }
 
+  // someFunction() {
+  //   console.log('Button clicked!');
+  // }
 
   toSection3() {
     let x = document.querySelector("#section3");
@@ -110,5 +119,7 @@ export class SearchPageComponent implements OnInit {
       )
     }
   }
+
+
 
 }

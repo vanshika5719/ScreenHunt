@@ -24,7 +24,7 @@
     <form action="" class="search">
     <input class="search-item" type="text" placeholder="Search movie here" id="searchbar"/>
     <button class="search-btn">
-        <img class="searchicon" alt="Search" src="./../../assets/images/search-page/iconlylightoutlinesearch.svg"/>
+      <img class="searchicon" alt="Search" src="./../../assets/images/search-page/iconlylightoutlinesearch.svg" [routerLink]="['/search-result']" (click)="sendId()"/>
     </button>
      </form>
   </div>

@@ -35,7 +35,7 @@
       <div class="bk-btn-bar"></div>
   </div>
   <ng-container *ngIf="movieDetail && !Isloading; else noDataFound">
-      <img class="result-wrap-icon" alt="{{movieDetail.MovieName}}" src="./../../assets/images/search-result/movietry.jpg"/>
+      <img class="result-wrap-icon" alt="{{movieDetail.MovieName}}" src="{{movieDetail.Poster}}"/>
 
       <label class="movie-name" htmlfor="movie-name">{{movieDetail.MovieName}}</label>
       <label class="movie-discription" htmlfor="movie-discription">{{movieDetail.Detail}}</label>
