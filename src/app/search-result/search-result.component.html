@@ -1,33 +1,64 @@
-<div class="result-page" id="result_container">
-  <div class="bk-btn">
-    <div class="bk-btn-triangle"></div><div class="bk-btn-bar">
-  </div></div>
-    <img class="result-wrap-icon" alt="{{movieDetail.MovieName}}" src="{{movieDetail.poster}}" />
+<!-- <div class="result-page" id="result_container">
+    <div class="bk-btn" routerLink="/search-page">
+        <div class="bk-btn-triangle"></div>
+        <div class="bk-btn-bar"></div>
+    </div>
+    <img class="result-wrap-icon" alt="{{movieDetail.MovieName}}" src="{{movieDetail.poster}}"/>
 
-    <input class="movie-name" type="text" placeholder="{{movieDetail.MovieName}}" />
-
-    <input class="movie-discription" type="text" placeholder="{{movieDetail.Detail}}" />
-
-    <label class="cast" htmlfor="cast">Cast :{{movieDetail.Cast}}</label>
-    <label class="genre" htmlfor="genre">Genre :{{movieDetail.Genre}} </label>
-    <label class="release-date" htmlfor="Release_date">Release Date:</label>
-    <label class="rating" htmlfor="rating">Rating:{{movieDetail.Rating}}</label>
+    <label class="movie-name" htmlfor="movie-name">{{movieDetail.MovieName}}</label>
+    <label class="movie-discription" htmlfor="movie-discription">{{movieDetail.Detail}}</label>
+    <label class="cast-label" htmlfor="cast">Cast :</label>
+    <label class="cast-data">{{movieDetail.Cast}}</label>
+    <label class="genre-label" htmlfor="genre">Genre :</label>
+    <label class="genre-data">{{movieDetail.Genre}}</label>
+    <label class="release-date-label" htmlfor="Release_date">Release Date:</label>
+    <label class="release-date-data">{{movieDetail.Rating}}</label>
+    <label class="rating-label" htmlfor="rating">Rating:</label>
+    <label class="rating-data">{{movieDetail.Rating}}</label>
     <label class="platforms-available" htmlfor="platforms">
-      <p class="platforms-available1">Platforms Available:</p>
-        <img *ngIf="movieDetail.Netflix" class="netflix1-1-icon" alt="" src="./../../assets/images/landing-page/netflix1-1@2x.png" />
-
-        <img *ngIf="movieDetail.Disney" class="disney-1-icon" alt="" src="./../../assets/images/landing-page/disney-1@2x.png" />
-  
-        <img *ngIf="movieDetail.HBO"
-          class="hbo-max-1590590561-1-icon"
-          alt=""
-          src="./../../assets/images/landing-page/hbomax1590590561-1@2x.png"
-        />
-  
-        <img *ngIf="movieDetail.Prime"
-          class="hbo-max-1590590561-1-icon"
-          alt=""
-          src="./../../assets/images/landing-page/prime-1@2x.png"
-        />
+     Platforms Available: 
     </label>
+    <div class="platform-icon">
+      <ng-container *ngIf="(movieDetail.Netflix == 1) || (movieDetail.Disney == 1) || (movieDetail.HBO == 1) || (movieDetail.Prime == 1); else noPlatforms">
+        <img *ngIf="movieDetail.Netflix == 1" class="netflix1-1-icon" alt="" src="./../../assets/images/landing-page/netflix1-1@2x.png"/>
+        <img *ngIf="movieDetail.Disney == 1" class="disney-1-icon" alt="" src="./../../assets/images/landing-page/disney-1@2x.png"/>
+        <img *ngIf="movieDetail.HBO == 1" class="hbo-max-1590590561-1-icon" alt="" src="./../../assets/images/landing-page/hbomax1590590561-1@2x.png"/>
+        <img *ngIf="movieDetail.Prime == 1" class="hbo-max-1590590561-1-icon" alt="" src="./../../assets/images/landing-page/prime-1@2x.png"/>
+    </ng-container>
+    <ng-template #noPlatforms><label class="not-available">The required movie is not available in you subscriptions.</label></ng-template>
+    </div>
+</div> -->
+
+<div class="result-page" id="result_container">
+  <div class="bk-btn" routerLink="/search-page">
+      <div class="bk-btn-triangle"></div>
+      <div class="bk-btn-bar"></div>
   </div>
+  <ng-container *ngIf="movieDetail && !Isloading; else noDataFound">
+      <img class="result-wrap-icon" alt="{{movieDetail.MovieName}}" src="./../../assets/images/search-result/movietry.jpg"/>
+
+      <label class="movie-name" htmlfor="movie-name">{{movieDetail.MovieName}}</label>
+      <label class="movie-discription" htmlfor="movie-discription">{{movieDetail.Detail}}</label>
+      <label class="cast-label" htmlfor="cast">Cast :</label>
+      <label class="cast-data">{{movieDetail.Cast}}</label>
+      <label class="genre-label" htmlfor="genre">Genre :</label>
+      <label class="genre-data">{{movieDetail.Genre}}</label>
+      <label class="release-date-label" htmlfor="Release_date">Release Date:</label>
+      <label class="release-date-data">{{movieDetail.ReleaseDate|date}}</label>
+      <label class="rating-label" htmlfor="rating">Rating:</label>
+      <label class="rating-data">{{movieDetail.Rating}}</label>
+      <label class="platforms-available" htmlfor="platforms">Platforms Available:</label>
+      <div class="platform-icon">
+          <ng-container *ngIf="movieDetail.Netflix == 1 || movieDetail.Disney == 1 || movieDetail.HBO == 1 || movieDetail.Prime == 1; else noPlatforms">
+              <img *ngIf="movieDetail.Netflix == 1" class="netflix1-1-icon" alt="" src="./../../assets/images/landing-page/netflix1-1@2x.png"/>
+              <img *ngIf="movieDetail.Disney == 1" class="disney-1-icon" alt="" src="./../../assets/images/landing-page/disney-1@2x.png"/>
+              <img *ngIf="movieDetail.HBO == 1" class="hbo-max-1590590561-1-icon" alt="" src="./../../assets/images/landing-page/hbomax1590590561-1@2x.png"/>
+              <img *ngIf="movieDetail.Prime == 1" class="hbo-max-1590590561-1-icon" alt="" src="./../../assets/images/landing-page/prime-1@2x.png"/>
+          </ng-container>
+          <ng-template #noPlatforms><label class="not-available">No platforms available</label></ng-template>
+      </div>
+  </ng-container>
+  <ng-template #noDataFound>
+      <label  *ngIf="!Isloading" class="opps">Data not found!</label>
+  </ng-template>
+</div>

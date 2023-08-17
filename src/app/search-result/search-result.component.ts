@@ -9,13 +9,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class SearchResultComponent implements OnInit {
   movieDetail: any;
-  currentTutorial = null;
-  currentIndex = -1;
-  title = '';
+  Isloading: boolean;
 
   constructor(private screenhuntService: ScreenhuntService,
     private route:ActivatedRoute,
-    private router:Router) { }
+    private router:Router) { 
+      this.Isloading=true;
+    }
 
   ngOnInit(): void {
     this.retrieveMovieDetails('1');
@@ -23,14 +23,20 @@ export class SearchResultComponent implements OnInit {
 
 
   retrieveMovieDetails(id:any):void {
+    this.Isloading=true;
     this.screenhuntService.get(id)
       .subscribe(
         data => {
           this.movieDetail = data;
           console.log(data);
+          this.Isloading=false;
         },
         error => {
           console.log(error);
+
         });
   }
 }
+
+
+

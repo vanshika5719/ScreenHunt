@@ -1,12 +1,37 @@
 import { Component,OnInit } from '@angular/core';
+import { ScreenhuntService } from '../services/screenhunt.service';
+import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-search-page',
   templateUrl: './search-page.component.html',
   styleUrls: ['./search-page.component.scss']
 })
+
 export class SearchPageComponent implements OnInit {
-  ngOnInit(): void {
+
+  allMovies: any;
+  
+  constructor(private screenhuntService: ScreenhuntService,
+    private route:ActivatedRoute,
+    private router:Router) { }
+
+  ngOnInit(): void { this.retrieveAllMovies();
+   }
+   retrieveAllMovies():void {
+    // this.Isloading=true;
+    this.screenhuntService.getAll()
+      .subscribe(
+        data => {
+          this.allMovies = data;
+          console.log(data);
+          // this.Isloading=false;
+        },
+        error => {
+          console.log(error);
+
+        });
   }
 
   toSection3(){

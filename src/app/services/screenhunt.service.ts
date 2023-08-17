@@ -12,9 +12,9 @@ export class ScreenhuntService {
  
   constructor(private http: HttpClient) { }
 
-  // getAll(): Observable<any> {
-  //   return this.http.get(baseUrl);
-  // }
+  getAll(): Observable<any> {
+    return this.http.get(baseUrl);
+  }
 
   get(id: any): Observable<any> {
     return this.http.get(`${baseUrl}/${id}`);

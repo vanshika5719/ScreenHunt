@@ -1,8 +1,8 @@
 .result-wrap-icon {
   position: absolute;
-  top: 10%;
+  top: 8%;
   left: 4.86%;
-  width: 50%;
+  // width: 50%;
   height: 90%;
   object-fit: cover;
   border-radius: 1.56% 1.56%;
@@ -13,7 +13,6 @@
   font-family: Inter;
   background-color: transparent;
   position: absolute;
-  color: darkslateblue;
 }
 .movie-name {
   font-weight: 800;
@@ -26,56 +25,122 @@
   justify-content: center;
   width: 31.25%;
   height: 9.26%;
+  color: #252525;
 }
 .movie-discription {
-  font-weight: 500;
-  font-size: 200%; 
-  top: 18%;
+  font-size: 100%; 
+  top: 25%;
   left: 40%;
   text-align: left;
   display: inline-block;
   width: 31.25%;
   height: 18.52%;
+  color: darkslateblue;
 }
-.cast,
-.genre,
-.rating,
-.release-date {
+
+//------------------------------movie-details----------------------//
+.cast-label{
   cursor: pointer;
   position: absolute;
-  top: 33.24%;
+  top: 33.24%; 
   left: 40%;
   display: inline-block;
   width: 32.6%;
-  height: 3.89%;
+  height: 3.89%; 
+  color: #252525;
+}
+
+.genre-label{
+  cursor: pointer;
+  position: absolute;
+  top: 38.24%; 
+  left: 40%;
+  display: inline-block;
+  width: 32.6%;
+  height: 3.89%; 
+  color: #252525;
+}
+
+.release-date-label{
+  cursor: pointer;
+  position: absolute;
+  top: 43.24%; 
+  left: 40%;
+  display: inline-block;
+  width: 32.6%;
+  height: 3.89%; 
+  color: #252525;
+}
+
+.rating-label{
+  cursor: pointer;
+  position: absolute;
+  top: 48.24%; 
+  left: 40%;
+  display: inline-block;
+  width: 32.6%;
+  height: 3.89%; 
+  color: #252525;
+}
+.cast-data
+{
+  cursor: pointer;
+  position: absolute;
+  top: 33.24%; 
+  left: 44%; 
+  display: inline-block;
+  width: 32.6; 
+  height: 3.89%; 
+  color: darkslateblue; 
+}
+
+.genre-data
+{
+  cursor: pointer;
+  position: absolute;
+  top: 38.24%; 
+  left: 44%; 
+  display: inline-block;
+  width: 32.6; 
+  height: 3.89%; 
+  color: darkslateblue; 
+}
+
+.rating-data
+{
+  cursor: pointer;
+  position: absolute;
+  top: 48.24%; 
+  left: 44%; 
+  display: inline-block;
+  width: 32.6; 
+  height: 3.89%; 
+  color: darkslateblue; 
+}
+
+.release-date-data{
+  cursor: pointer;
+  position: absolute;
+  top: 43.24%; 
+  left: 47.5%; 
+  display: inline-block;
+  width: 32.6; 
+  height: 3.89%; 
   color: darkslateblue;
 }
-.genre,
-.rating,
-.release-date {
-  top: 38.15%;
-}
-.rating,
-.release-date {
-  top: 43.06%;
-}
-.rating {
-  top: 47.96%;
-}
-.platforms-available1 {
-  margin: 0;
-}
+
+
 .platforms-available {
   cursor: pointer;
   position: absolute;
-  top: 65%;
-  left: 50%;
+  top: 53%;
+  left: 36.5%;
   font-weight: 600;
   text-align: center;
   display: inline-block;
   width: 17.29%;
   height: 9.07%;
-  color: darkslateblue;
+  color: #252525;
 }
 .result-page {
   position: fixed;
@@ -125,13 +190,40 @@
 .netflix1-1-icon {
   position: relative;
   border-radius: 0.5%;
-  width: 60%;
-  height: 60%;
+  width: 8.2%;
+  height: 7.8%;
 }
-.disney-1-icon,
-.hbo-max-1590590561-1-icon {
-  width: 60%;
+// .disney-1-icon,
+// .hbo-max-1590590561-1-icon {
+//   width: 8.2%;
+// }
+// .hbo-max-1590590561-1-icon {
+//   width: 8.2%;
+// }
+
+.platform-icon{
+  position: fixed;
+  top: 54.2%;
+  left: 51.5%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3.1%;
 }
-.hbo-max-1590590561-1-icon {
-  width: 60%;
+
+.not-available{
+  position: absolute;
+  color: darkslateblue;
+  white-space: nowrap;
+}
+
+.opps{
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  font-size: 200%;
+  font-weight: 900;
+  color: #333;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #ddd, 3px 3px 0 #bbb;
 }
