@@ -52,7 +52,7 @@ export class SearchPageComponent implements OnInit {
   }
 
   sendId() {
-    this.sharedService.changeId(7);
+    this.sharedService.changeId(8);
   }
 
   // someFunction() {
