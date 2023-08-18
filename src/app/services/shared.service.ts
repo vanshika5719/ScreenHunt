@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class SharedService {
-  private idSource = new BehaviorSubject<number>(0);
+  private idSource = new BehaviorSubject<number>(-1);
   currentId = this.idSource.asObservable();
 
   constructor() { }

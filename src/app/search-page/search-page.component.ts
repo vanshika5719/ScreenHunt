@@ -16,15 +16,19 @@ export class SearchPageComponent implements OnInit {
   allMovies: movie[]=[];
   recommendedMovies: movie[]=[];
   trendingMovies: movie[]=[];
-
+  searchText: string = '';
+  movieId:number = 0;
   constructor(private screenhuntService: ScreenhuntService,
     private sharedService: SharedService,
     private route: ActivatedRoute,
-    private router: Router) { }
+    private router: Router) {
+      this.searchText = '';
+      this.movieId =0;
+     }
 
   ngOnInit(): void {
     this.retrieveAllMovies();
-
+    
   }
   retrieveAllMovies(): void {
     this.screenhuntService.getAll()
@@ -51,13 +55,17 @@ export class SearchPageComponent implements OnInit {
         });
   }
 
-  sendId() {
-    this.sharedService.changeId(8);
+  searchMovie(){
+    this.allMovies.forEach((movie) => {
+      if(movie.MovieName.toLowerCase().replace(/\s/g, "") == this.searchText.toLowerCase().replace(/\s/g, ""))
+      this.movieId = movie.id;
+    });
+    this.sendId(this.movieId);
   }
 
-  // someFunction() {
-  //   console.log('Button clicked!');
-  // }
+  sendId(id:number) {
+    this.sharedService.changeId(id);
+  }
 
   toSection3() {
     let x = document.querySelector("#section3");

@@ -22,9 +22,9 @@
 
   <div>
     <form action="" class="search">
-    <input class="search-item" type="text" placeholder="Search movie here" id="searchbar"/>
+    <input class="search-item" type="text" placeholder="Search movie here" id="searchbar" [ngModelOptions]="{standalone: true}" [(ngModel)]="searchText" />
     <button class="search-btn">
-      <img class="searchicon" alt="Search" src="./../../assets/images/search-page/iconlylightoutlinesearch.svg" [routerLink]="['/search-result']" (click)="sendId()"/>
+      <img class="searchicon" alt="Search" src="./../../assets/images/search-page/iconlylightoutlinesearch.svg" [routerLink]="['/search-result']" (click)="searchMovie()"/>
     </button>
      </form>
   </div>

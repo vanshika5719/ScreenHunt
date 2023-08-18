@@ -13,19 +13,24 @@ export class SearchResultComponent implements OnInit {
 
   movieDetail!: movie;
   Isloading: boolean;
-  id: number;
+  id: number = 0;
 
   constructor(private screenhuntService: ScreenhuntService,
     private sharedService: SharedService,
     private route:ActivatedRoute,
     private router:Router) { 
       this.Isloading=true;
-      this.id = 0;
     }
 
   ngOnInit(): void {
     this.sharedService.currentId.subscribe(id => this.id = id);
       console.log('this is from constructor'+ this.id);
+    if(this.id == -1){
+      this.id=Number(localStorage.getItem('movieId'));
+    }
+    else{
+      localStorage.setItem('movieId',this.id.toString());
+    }
     this.retrieveMovieDetails(this.id);
   }
 
