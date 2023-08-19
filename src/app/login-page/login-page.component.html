@@ -1,21 +1,18 @@
 <div class="content" role="main">
-
-
     <div class="desktop-1">
         <div class="information">
-            <div class="login-account">Login Account</div>
-            <input class="emailinput" type="text" name="email" placeholder="Email">
-            <input class="passwordinput" type="password" name="password" placeholder="Password">
-            <button class="login-wrapper">
-                <div class="login" >Login</div>
-            </button>
+            <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()">
+                <div class="login-account">Login Account</div>
+                <input class="emailinput" type="text" formControlName="emailid" placeholder="Email" required>
+                <input class="passwordinput" type="password" formControlName="pass" placeholder="Password" required>
+                <button class="login-wrapper" type="submit">
+                    <div class="login">Login</div>
+                </button>
+            </form>
         </div>
         <img class="vector-icon" alt="" src="./../../assets/images/vector.svg"/>
-
         <img class="vector-icon1" alt="" src="./../../assets/images/vector1.svg"/>
-
         <b class="your-ultimate-destination">Your Ultimate destination for movie magic!</b>
         <img class="screenhunt-1-icon" alt="" src="./../../assets/images/screenhunt-1@2x.png"/>
     </div>
-
 </div>
