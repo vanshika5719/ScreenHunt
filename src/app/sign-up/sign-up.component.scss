@@ -1,7 +1,7 @@
 .create-account {
     position: absolute;
     top: 55px;
-    left: 305px;
+    left: 280px;
     font-size: 45px;
     font-weight: 800;
   }
@@ -31,135 +31,7 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .component-1-child {
-    border: 1px solid darkslateblue;
-    background-color: white;
-    position: absolute;
-    height: 74.24%;
-    width: 100%;
-    top: 25.76%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: var(--br-3xs);
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  .first-name {
-    position: relative;
-  }
-  .first-name-wrapper {
-    position: absolute;
-    height: 36.36%;
-    width: 18.83%;
-    top: 0;
-    right: 70.87%;
-    bottom: 63.64%;
-    left: 10.3%;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  .component-1 {
-    position: absolute;
-    top: 25%;
-    left: 198px;
-    width: 563px;
-    height: 66px;
-  }
-  .first-name-container {
-    position: absolute;
-    height: 36.36%;
-    width: 9.41%;
-    top: 0;
-    right: 75.57%;
-    bottom: 63.64%;
-    left: 15.01%;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  .component-31 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  .component-3 {
-    position: absolute;
-    top: 47%;
-    left: 198px;
-    width: 563px;
-    height: 66px;
-  }
-  .first-name-frame {
-    position: absolute;
-    height: 36.36%;
-    width: 17.09%;
-    top: 0;
-    right: 71.74%;
-    bottom: 63.64%;
-    left: 11.17%;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  .component-41 {
-    position: absolute;
-    height: 100%;
-    width: 112.38%;
-    top: 0;
-    right: -12.38%;
-    bottom: 0;
-    left: 0;
-  }
-  .component-4,
-  .frame-div {
-    position: absolute;
-    top: 58%;
-    left: 198px;
-    width: 505px;
-    height: 66px;
-  }
-  .frame-div {
-    height: 36.36%;
-    width: 18.47%;
-    top: 0;
-    right: 71.05%;
-    bottom: 63.64%;
-    left: 10.48%;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  .component-21 {
-    position: absolute;
-    height: 100%;
-    width: 158.59%;
-    top: 0;
-    right: -58.59%;
-    bottom: 0;
-    left: 0;
-  }
-  .component-2 {
-    position: absolute;
-    top: 36%;
-    left: 198px;
-    width: 355px;
-    height: 66px;
-  }
-
+  
   .information,
   .select-interest {
     position: absolute;
@@ -218,6 +90,15 @@
     font-family: Inter;
   }
  
+  // .error{
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   font-size: 40px;
+  //   font-weight: 200;
+  //   color: #b31312;
+  // }
   //----------------subscription dropdown--------------//
 
   * {
@@ -502,3 +383,72 @@
   align-items: center;
   gap: 10px;
 }
+
+
+
+body {
+	background-color: #101010;
+	font-family: 'Abel', sans-serif;
+	color: #333;
+	margin: 0;
+}
+
+
+//-------------new form------------//
+input {
+	opacity: 0.3;
+	border-radius: 10px;
+	padding: 10px;
+	width: 80%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	box-shadow: none;
+	color: #252525;
+	border: none;
+	background-color: darkslateblue;
+	transition: 1s;
+	border: 2px solid transparent;
+  font-size: medium;
+  font-weight: 100px;
+}
+
+input:focus, input:hover {
+	transition: 1s;
+	border: 2px solid #b31312;
+	background-color: transparent;
+}
+
+.lastnameinput {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 500px;
+}
+
+.firstnameinput{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 500px;
+}
+.emailinput{
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  width: 500px;
+}
+
+.passwordinput{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 500px;
+}
+
+
+
+
+
+
