@@ -3,6 +3,7 @@ import { ScreenhuntService } from '../services/screenhunt.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { movie } from './movie.interface';
 import { SharedService } from '../services/shared.service';
+import { subscriptions} from './../login-page/subscriptions.interface';
 
 
 @Component({
@@ -18,15 +19,40 @@ export class SearchPageComponent implements OnInit {
   trendingMovies: movie[]=[];
   searchText: string = "";
   movieId:number = 0;
+  subs:subscriptions;
   constructor(private screenhuntService: ScreenhuntService,
     private sharedService: SharedService,
     private route: ActivatedRoute,
     private router: Router) {
       this.searchText = "";
       this.movieId =0;
+      this.subs = {
+        fname:'noUserLogged',
+        lname:'noUserLogged',
+        interest:'Drama',
+        Disney: '0',
+        HBO: '0',
+        Netflix: '0',
+        Prime: '0',
+      }
      }
 
   ngOnInit(): void {
+    this.sharedService.getSubs().subscribe(subs => this.subs = subs);
+    console.log('this subs from search page' + this.subs.fname?.toString());
+    if(this.subs.fname === 'noUserLogged' && localStorage.getItem('fname') == null){
+      this.router.navigate(['/login'])
+    }
+    else if(this.subs.fname === 'noUserLogged' && localStorage.getItem('fname') != null){
+      this.subs.fname = localStorage.getItem('fname')?.toString();
+      this.subs.lname = localStorage.getItem('lname')?.toString();
+      this.subs.interest = localStorage.getItem('interest')?.toString();
+      this.subs.Netflix = localStorage.getItem('Netflix')?.toString();
+      this.subs.HBO = localStorage.getItem('HBO')?.toString();
+      this.subs.Prime = localStorage.getItem('Prime')?.toString();
+      this.subs.Disney = localStorage.getItem('Disney')?.toString();
+
+    }
     this.retrieveAllMovies();
     
   }
@@ -36,11 +62,10 @@ export class SearchPageComponent implements OnInit {
         data => {
           this.allMovies = data;
           console.log('All Movies:', this.allMovies);
-          // this.recommendedMovies = [];
-          // this.trendingMovies = [];
+      
           this.allMovies.forEach((movie) => {
-            // console.log('Movie:', movie);
-            if (movie.Genre == 'Drama') {
+            
+            if (movie.Genre == this.subs.interest?.toString()) {
               this.recommendedMovies.push(movie);
             }
             if (movie.IsTrending == '1') {
@@ -55,6 +80,11 @@ export class SearchPageComponent implements OnInit {
         });
   }
 
+  getMovieFromCarousel(movieName:string){
+    this.searchText = movieName;
+    this.searchMovie();
+  }
+
   searchMovie(){
     if(this.searchText != ""){
     this.allMovies.forEach((movie) => {
@@ -66,7 +96,7 @@ export class SearchPageComponent implements OnInit {
   }
 
   sendId(id:number) {
-    this.sharedService.changeId(id);
+    this.sharedService.changeId(id); 
     this.router.navigate(['/search-result'])
   }
 

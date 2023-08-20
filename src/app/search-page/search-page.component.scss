@@ -141,10 +141,12 @@ h1 {
   height: 200px !important;
   width: 355px  !important;
   display: flex;
+  cursor: pointer;
 }
 .recommendation-wrapper section .item:hover {
   margin: 0 40px;
   transform: scale(1.2);
+  cursor: pointer;
 }
 .recommendation-wrapper section a {
   position: absolute;
@@ -213,10 +215,12 @@ h1 {
   height: 200px !important;
   width: 355px  !important;
   display: flex;
+  cursor: pointer;
 }
 .wrapper section .item:hover {
   margin: 0 40px;
   transform: scale(1.2);
+  cursor: pointer;
 }
 .wrapper section a {
   position: absolute;

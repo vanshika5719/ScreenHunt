@@ -1,5 +1,4 @@
 export interface movie {
-
     Cast: string,
     Detail: string,
     Disney: number,

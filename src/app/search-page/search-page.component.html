@@ -33,21 +33,21 @@
     <section id="section4">
       <a (click)="toSection6()" class="arrow__btn">‹</a>
       <div class="item" *ngFor="let movie of recommendedMovies | slice:0:4; let i=index">
-      <img src="{{movie.Poster}}" alt="Describe Image">
+      <img src="{{movie.Poster}}" alt="Describe Image" (click)="getMovieFromCarousel(movie.MovieName)">
       </div>
       <a (click)="toSection5()" class="arrow__btn">›</a>
     </section>
     <section id="section5">
       <a (click)="toSection4()" class="arrow__btn">‹</a>
       <div class="item" *ngFor="let movie of recommendedMovies | slice:4:8; let i=index">
-        <img src="{{movie.Poster}}" alt="Describe Image">
+        <img src="{{movie.Poster}}" alt="Describe Image" (click)="getMovieFromCarousel(movie.MovieName)">
         </div>
       <a (click)="toSection6()" class="arrow__btn">›</a>
     </section>
     <section id="section6">
       <a (click)="toSection5()" class="arrow__btn">‹</a>
       <div class="item" *ngFor="let movie of recommendedMovies">
-        <img src="{{movie.Poster}}" alt="Describe Image">
+        <img src="{{movie.Poster}}" alt="Describe Image" (click)="getMovieFromCarousel(movie.MovieName)">
         </div>
       <a (click)="toSection4()"  class="arrow__btn">›</a>
     </section>
