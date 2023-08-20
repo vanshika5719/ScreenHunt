@@ -138,6 +138,9 @@ h1 {
 .recommendation-wrapper section .item {
   padding: 0 2px;
   transition: 250ms all;
+  height: 200px !important;
+  width: 355px  !important;
+  display: flex;
 }
 .recommendation-wrapper section .item:hover {
   margin: 0 40px;
@@ -207,6 +210,9 @@ h1 {
 .wrapper section .item {
   padding: 0 2px;
   transition: 250ms all;
+  height: 200px !important;
+  width: 355px  !important;
+  display: flex;
 }
 .wrapper section .item:hover {
   margin: 0 40px;

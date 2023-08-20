@@ -16,13 +16,13 @@ export class SearchPageComponent implements OnInit {
   allMovies: movie[]=[];
   recommendedMovies: movie[]=[];
   trendingMovies: movie[]=[];
-  searchText: string = '';
+  searchText: string = "";
   movieId:number = 0;
   constructor(private screenhuntService: ScreenhuntService,
     private sharedService: SharedService,
     private route: ActivatedRoute,
     private router: Router) {
-      this.searchText = '';
+      this.searchText = "";
       this.movieId =0;
      }
 
@@ -56,15 +56,18 @@ export class SearchPageComponent implements OnInit {
   }
 
   searchMovie(){
+    if(this.searchText != ""){
     this.allMovies.forEach((movie) => {
       if(movie.MovieName.toLowerCase().replace(/\s/g, "") == this.searchText.toLowerCase().replace(/\s/g, ""))
       this.movieId = movie.id;
     });
     this.sendId(this.movieId);
   }
+  }
 
   sendId(id:number) {
     this.sharedService.changeId(id);
+    this.router.navigate(['/search-result'])
   }
 
   toSection3() {
