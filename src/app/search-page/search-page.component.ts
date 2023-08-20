@@ -100,6 +100,12 @@ export class SearchPageComponent implements OnInit {
     this.router.navigate(['/search-result'])
   }
 
+
+  logout() {
+    localStorage.clear(); 
+    this.router.navigate(['/']); 
+  }
+
   toSection3() {
     let x = document.querySelector("#section3");
     if (x) {

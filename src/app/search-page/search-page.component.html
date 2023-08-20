@@ -12,11 +12,15 @@
     <nav class="navbar-link" id="navbar">
       <div class="home">Category</div>
       <div class="home">Subscriptions</div>
+      <div class="home">|</div>
+      <div class="home">Hello {{subs.fname}}</div>
+      <div class="home">|</div>
       <img
-        class="iconlyboldprofile"
-        alt=""
-        src="./../../assets/images/search-page/iconlyboldprofile.svg"
-      />
+      class="iconlyboldprofile"
+      alt=""
+      src="./../../assets/images/search-page/logout.svg"
+      (click)="logout()"
+    />
     </nav>
   </div>
 
@@ -46,7 +50,7 @@
     </section>
     <section id="section6">
       <a (click)="toSection5()" class="arrow__btn">‹</a>
-      <div class="item" *ngFor="let movie of recommendedMovies">
+      <div class="item" *ngFor="let movie of recommendedMovies | slice:8:12; let i=index">
         <img src="{{movie.Poster}}" alt="Describe Image" (click)="getMovieFromCarousel(movie.MovieName)">
         </div>
       <a (click)="toSection4()"  class="arrow__btn">›</a>

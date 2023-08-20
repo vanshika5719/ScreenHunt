@@ -1,59 +1,30 @@
 <form [formGroup]="signupForm" (ngSubmit)="signupSubmit()">
 
-    <!-- errmsg show here -->
-    <div *ngIf="errmsgshow">
-        <p class="text-danger">{{ errmsg }}</p>
-    </div>
-
     <div class="desktop-1">
         <div class="information">
             <div class="create-account">Create Account</div>
             <button class="create-account-wrapper" type="submit">
                 <div class="create-account1">Create Account</div>
             </button>
-            <input type="text" class="firstnameinput"  formControlName="fname" placeholder="First Name">
-            <input class="lastnameinput" type="text" formControlName="lname" placeholder="Last Name">
-            <input class="emailinput" type="text" formControlName="emailid" placeholder="Email">
-            <input class="passwordinput" type="password" formControlName="pass" placeholder="Password">
-            <div class="interest-container">
-                <b class="select-interest">
-                    Interest:</b>
-                <div class="sub-list">
-                    <div class="drop-down">
-                        <input id="toggle" type="checkbox" class="drop-down-toggle" name="toggle"/>
-                        <label for="toggle" class="drop-down-label">
-                            Select here
-                            <div class="arrow">
-                                <svg width="17" height="10" viewbox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.43749 0.987258L8.18749 7.73726L14.9375 0.987257L16.0689 2.11863L8.18749 10L0.306121 2.11863L1.43749 0.987258Z" fill="white"/>
-                                </svg>
-                            </div>
-                        </label>
-                        <div class="options">
-                            <div class="divider"></div>
-                            <div class="option">
-                                <input type="radio" name="interest" formControlName="interest" value="Action"/>
-                                Action
-                            </div>
-                            <div class="divider"></div>
-                            <div class="option">
-                                <input type="radio" name="interest" formControlName="interest" value="Comedy"/>
-                                Comedy
-                            </div>
-                            <div class="divider"></div>
-                            <div class="option">
-                                <input type="radio" name="interest" formControlName="interest" value="Horror"/>
-                                Horror
-                            </div>
-                            <div class="divider"></div>
-                            <div class="option">
-                                <input type="radio" name="interest" formControlName="interest" value="Romantic"/>
-                                Romantic
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- errmsg show here -->
+            <div class="error" *ngIf="errmsgshow">
+                <p>{{ errmsg }}</p>
             </div>
+            <input type="text" class="firstnameinput" formcontrolname="fname" placeholder="First Name">
+            <input class="lastnameinput" type="text" formcontrolname="lname" placeholder="Last Name">
+            <input class="emailinput" type="text" formcontrolname="emailid" placeholder="Email">
+            <input class="passwordinput" type="password" formcontrolname="pass" placeholder="Password">
+            <div class="interest-container">
+                <b class="select-interest">Interest:</b>
+                <select class="interest-dropdown" formcontrolname="interest">
+                    <option value="" disabled selected>Select here</option>
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Romantic">Romantic</option>
+                </select>
+            </div>
+
         </div>
         <img class="vector-icon" alt="" src="./../../assets/images/vector.svg"/>
         <img class="vector-icon1" alt="" src="./../../assets/images/vector1.svg"/>
@@ -61,7 +32,7 @@
         <img class="screenhunt-1-icon" alt="" src="./../../assets/images/screenhunt-1@2x.png"/>
         <div class="subs-container">
             <b class="subscriptions">Subscriptions:</b>
-            <div class="subscription-list" formArrayName="subscriptions">
+            <div class="subscription-list" formarrayname="subscriptions">
                 <div class="accordion">
                     <input id="toggle1" type="checkbox" class="accordion-toggle" name="toggle"/>
                     <label for="toggle1">
@@ -76,22 +47,22 @@
                         <div class="line"></div>
                         <label class="item">
                             Netflix
-                            <input type="checkbox" formControlName="0"/>
+                            <input type="checkbox" formcontrolname="0"/>
                         </label>
                         <div class="line"></div>
                         <label class="item">
                             HBO
-                            <input type="checkbox" formControlName="1"/>
+                            <input type="checkbox" formcontrolname="1"/>
                         </label>
                         <div class="line"></div>
                         <label class="item">
                             Amazon Prime
-                            <input type="checkbox" formControlName="2"/>
+                            <input type="checkbox" formcontrolname="2"/>
                         </label>
                         <div class="line"></div>
                         <label class="item">
                             Hotstar
-                            <input type="checkbox" formControlName="3"/>
+                            <input type="checkbox" formcontrolname="3"/>
                         </label>
                     </div>
                 </div>
