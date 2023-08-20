@@ -10,13 +10,13 @@
             <div class="error" *ngIf="errmsgshow">
                 <p>{{ errmsg }}</p>
             </div>
-            <input type="text" class="firstnameinput" formcontrolname="fname" placeholder="First Name">
-            <input class="lastnameinput" type="text" formcontrolname="lname" placeholder="Last Name">
-            <input class="emailinput" type="text" formcontrolname="emailid" placeholder="Email">
-            <input class="passwordinput" type="password" formcontrolname="pass" placeholder="Password">
+            <input type="text" class="firstnameinput" formControlName="fname" placeholder="First Name">
+            <input class="lastnameinput" type="text" formControlName="lname" placeholder="Last Name">
+            <input class="emailinput" type="text" formControlName="emailid" placeholder="Email">
+            <input class="passwordinput" type="password" formControlName="pass" placeholder="Password">
             <div class="interest-container">
                 <b class="select-interest">Interest:</b>
-                <select class="interest-dropdown" formcontrolname="interest">
+                <select class="interest-dropdown" formControlName="interest">
                     <option value="" disabled selected>Select here</option>
                     <option value="Action">Action</option>
                     <option value="Comedy">Comedy</option>
@@ -32,7 +32,7 @@
         <img class="screenhunt-1-icon" alt="" src="./../../assets/images/screenhunt-1@2x.png"/>
         <div class="subs-container">
             <b class="subscriptions">Subscriptions:</b>
-            <div class="subscription-list" formarrayname="subscriptions">
+            <div class="subscription-list" formArrayName="subscriptions">
                 <div class="accordion">
                     <input id="toggle1" type="checkbox" class="accordion-toggle" name="toggle"/>
                     <label for="toggle1">
@@ -47,22 +47,22 @@
                         <div class="line"></div>
                         <label class="item">
                             Netflix
-                            <input type="checkbox" formcontrolname="0"/>
+                            <input type="checkbox" formControlName="0"/>
                         </label>
                         <div class="line"></div>
                         <label class="item">
                             HBO
-                            <input type="checkbox" formcontrolname="1"/>
+                            <input type="checkbox" formControlName="1"/>
                         </label>
                         <div class="line"></div>
                         <label class="item">
                             Amazon Prime
-                            <input type="checkbox" formcontrolname="2"/>
+                            <input type="checkbox" formControlName="2"/>
                         </label>
                         <div class="line"></div>
                         <label class="item">
                             Hotstar
-                            <input type="checkbox" formcontrolname="3"/>
+                            <input type="checkbox" formControlName="3"/>
                         </label>
                     </div>
                 </div>
