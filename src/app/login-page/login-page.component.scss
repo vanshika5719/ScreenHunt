@@ -34,6 +34,14 @@
     font-size: larger;
     color: white;
   }
+
+  .login-wrapper:hover {
+    background-color: #ea906c; 
+    color: #fff; 
+    transform: scale(1.1);
+    transition: 0.3s; 
+  }
+  
   .information {
     top: 0;
     left: 40%;
@@ -102,6 +110,7 @@
     font-size: 15px;
     color: #b31312;
   }
+  
   
   // :root {
   //   /* fonts */

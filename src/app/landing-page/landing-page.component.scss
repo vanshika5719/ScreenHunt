@@ -137,6 +137,14 @@
   background-color: darksalmon;
   border-radius: 40px;
 }
+
+.button-wrapper:hover {
+  background-color: firebrick; 
+  color: #fff; 
+  transform: scale(1.1); 
+  transition: 0.3s; 
+}
+
 .frame-button {
   position: fixed;
   top: 65%;

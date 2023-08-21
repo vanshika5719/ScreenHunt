@@ -203,6 +203,12 @@
   left: 13.2px;
 }
 
+.bk-btn:hover {
+  background-color: rgba(37, 37, 37, 0.9); 
+  transform: scale(1.1); 
+  transition: 0.3s; 
+}
+
 
 .disney-1-icon,
 .hbo-max-1590590561-1-icon,
