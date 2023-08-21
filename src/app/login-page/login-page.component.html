@@ -2,6 +2,10 @@
     <div class="desktop-1">
         <div class="information">
             <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()">
+                <!-- errmsg show here -->
+      <div class="error" *ngIf="errmsgshow">
+        <p >{{ errmsg }}</p>
+      </div>
                 <div class="login-account">Login Account</div>
                 <input class="emailinput" type="text" formControlName="emailid" placeholder="Email" required>
                 <input class="passwordinput" type="password" formControlName="pass" placeholder="Password" required>

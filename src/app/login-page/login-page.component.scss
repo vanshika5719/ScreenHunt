@@ -1,7 +1,7 @@
 .login-account {
     position: absolute;
     top: 10%;
-    left: 35%;
+    left: 32%;
     font-size: 45px;
     font-weight: 800;
   }
@@ -17,8 +17,8 @@
     padding: 10px;
     background-color: #b31312;
     position: absolute;
-    top: 80%;
-    left: 40.5%;
+    top: 70%;
+    left: 40%;
     border-radius: 20px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     width: 178px;
@@ -93,6 +93,15 @@
     line-height: normal;
     
   }
+
+  .error{
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    color: #b31312;
+  }
   
   // :root {
   //   /* fonts */
@@ -112,7 +121,7 @@
   
   //-------------------------------new-form---------------------------------//
   input {
-    opacity: 0.3; 
+    opacity: 1; 
     border-radius: 10px;
     padding: 10px;
     width: 80%;
@@ -121,19 +130,20 @@
     margin-left: auto;
     margin-bottom: 10px;
     box-shadow: none;
-    color: #000; 
+    color: darkslateblue; 
     border: 2px solid #b31312; 
-    background-color: darkslateblue; 
+    background-color: white; 
     transition: 1s;
     font-size: 18px; 
     font-weight: 200px;
   }
-
+  
   input:focus, input:hover {
     transition: 1s;
     border: 2px solid #b31312;
     background-color: transparent;
   }
+  
   
   
 
