@@ -106,15 +106,15 @@ export class SearchPageComponent implements OnInit {
     this.router.navigate(['/']); 
   }
 
-  toSection3() {
-    let x = document.querySelector("#section3");
-    if (x) {
-      x.scrollIntoView({
-        behavior: 'smooth',
-      }
-      )
-    }
-  }
+  // toSection3() {
+  //   let x = document.querySelector("#section3");
+  //   if (x) {
+  //     x.scrollIntoView({
+  //       behavior: 'smooth',
+  //     }
+  //     )
+  //   }
+  // }
 
   toSection2() {
     let x = document.querySelector("#section2");
@@ -137,15 +137,15 @@ export class SearchPageComponent implements OnInit {
   }
 
 
-  toSection6() {
-    let x = document.querySelector("#section6");
-    if (x) {
-      x.scrollIntoView({
-        behavior: 'smooth',
-      }
-      )
-    }
-  }
+  // toSection6() {
+  //   let x = document.querySelector("#section6");
+  //   if (x) {
+  //     x.scrollIntoView({
+  //       behavior: 'smooth',
+  //     }
+  //     )
+  //   }
+  // }
 
   toSection5() {
     let x = document.querySelector("#section5");

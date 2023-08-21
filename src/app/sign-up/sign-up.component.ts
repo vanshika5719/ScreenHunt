@@ -64,7 +64,7 @@ export class SignUpComponent implements OnInit {
       });
     } else {
       this.errmsgshow = true;
-      this.errmsg = 'All field required !!';
+      this.errmsg = 'All field required.';
     }
       
     }

@@ -73,7 +73,7 @@ export class LoginPageComponent {
     }else
     {
       this.errmsgshow=true;
-      this.errmsg = 'All field required !!';
+      this.errmsg = 'All field required.';
     }
   }
 }
