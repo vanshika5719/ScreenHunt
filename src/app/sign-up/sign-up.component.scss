@@ -113,10 +113,10 @@
   .subscription-list {
     width: 100%;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 18px !important;
     display: absolute;
+    position: relative;
     justify-content: center;
-    padding-top: 30px;
   }
   
   
@@ -124,12 +124,12 @@
     position: relative;
     top: 53%;
     padding: 10px;
-    width: 200px; 
+    width: 180px; 
     border-radius: 10px;
     border: 2px solid #b31312;
     background-color: white;
     color: darkslateblue;
-    font-size: 18px; 
+    font-size: 15px; 
     font-weight: 200px;
     opacity: 1;
     transition: 1s;
@@ -149,11 +149,10 @@
     align-content: center;
     align-self: center;
     justify-content: space-between;
-    height: 35px; 
-    padding: 0 20px;
-    font-size: 18px; 
+    height: 20px; 
+    font-size: 15px !important; 
     color: darkslateblue;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
     overflow: hidden;
   }
@@ -171,13 +170,21 @@
   .item {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
     padding: 0 15px 0 15px;
     align-items: center;
-    height: 60px;
+    height: 40px;
     cursor: pointer;
     transition: 0.3s all;
-    font-size: 18px; 
+    font-size: 15px !important; 
     color: darkslateblue;
+  }
+  .subs-input{
+    margin-right: 10px; 
+    order: -1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
   }
   
   .line {
@@ -193,8 +200,8 @@
   flex-direction: column;
   align-content: center;
   height: auto;
-  padding: 4px;
-  font-size: 18px; 
+  padding: 4px ;
+  font-size: 15px !important; 
   color: #696969;
   font-weight: 600;
   overflow: hidden;
@@ -225,7 +232,7 @@
     margin-top: 4px;
     justify-content: center;
     width: 100%;
-    height: 60px;
+    height: 50px;
     color: darkslateblue;
     background-color: #2965FF;
     border-radius: 10px;
@@ -242,51 +249,37 @@
     transform: scale(0.980);
   }
   
-  
-  .powered {
-  /*   display: none; */
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 100px;
-    cursor: pointer;
-  }
-  
-  a {
-    color: darkslateblue;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
   .open svg path {
       fill: darkslateblue;
   }
   
 .subs-container{
   display: flex;
-  gap: 10px;
+  gap: 21px;
   align-items: center; 
   position: absolute; 
-  top: 55%;
-  left:43%;
+  top: 60.5%;
+  left:42%;
 }
 
-.subs-container>.subscriptions {
-  margin-right: 20px;
-}
+// .subs-container>.subscriptions {
+//   margin-right: 20px;
+// }
 
 //--------------------------interest - drop down---------------------//
 .interest-dropdown {
   position: relative;
-  top: 53%;
-  left: 55%;
+  top: 58%;
+  left: 49%;
   padding: 10px;
   width: 200px;
   border-radius: 10px;
   border: 2px solid #b31312;
   background-color: white;
   color: darkslateblue;
-  font-size: 18px;
-  font-weight: 200px;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400px;
   opacity: 1;
   transition: 1s;
 }
@@ -299,7 +292,7 @@
 
 .interest-container {
   position: absolute;
-  top: 62%;
+  top: 60.5%;
   left: 55%;
   display: flex;
   align-items: center;
@@ -307,8 +300,9 @@
 }
 
 
+
 //-------------form------------//
-input {
+.forminput {
   opacity: 1; 
   border-radius: 10px;
   padding: 10px;

@@ -10,10 +10,10 @@
             <div class="error" *ngIf="errmsgshow">
                 <p>{{ errmsg }}</p>
             </div>
-            <input type="text" class="firstnameinput" formControlName="fname" placeholder="First Name">
-            <input class="lastnameinput" type="text" formControlName="lname" placeholder="Last Name">
-            <input class="emailinput" type="text" formControlName="emailid" placeholder="Email">
-            <input class="passwordinput" type="password" formControlName="pass" placeholder="Password">
+            <input type="text" class="firstnameinput forminput"  formControlName="fname" placeholder="First Name">
+            <input class="lastnameinput forminput" type="text" formControlName="lname" placeholder="Last Name">
+            <input class="emailinput forminput" type="text" formControlName="emailid" placeholder="Email">
+            <input class="passwordinput forminput" type="password" formControlName="pass" placeholder="Password">
             <div class="interest-container">
                 <b class="select-interest">Interest:</b>
                 <select class="interest-dropdown" formControlName="interest">
@@ -47,22 +47,22 @@
                         <div class="line"></div>
                         <label class="item">
                             Netflix
-                            <input type="checkbox" formControlName="0"/>
+                            <input class="subs-input" type="checkbox" formControlName="0"/>
                         </label>
                         <div class="line"></div>
                         <label class="item">
                             HBO
-                            <input type="checkbox" formControlName="1"/>
+                            <input class="subs-input" type="checkbox" formControlName="1"/>
                         </label>
                         <div class="line"></div>
                         <label class="item">
                             Amazon Prime
-                            <input type="checkbox" formControlName="2"/>
+                            <input class="subs-input" type="checkbox" formControlName="2"/>
                         </label>
                         <div class="line"></div>
                         <label class="item">
                             Hotstar
-                            <input type="checkbox" formControlName="3"/>
+                            <input class="subs-input" type="checkbox" formControlName="3"/>
                         </label>
                     </div>
                 </div>
