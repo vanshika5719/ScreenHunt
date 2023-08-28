@@ -20,16 +20,16 @@
       <div class="platform-icon">
           <ng-container *ngIf="movieDetail.Netflix == 1 || movieDetail.Disney == 1 || movieDetail.HBO == 1 || movieDetail.Prime == 1; else noPlatforms">
             <a *ngIf="movieDetail.Netflix == 1 && subs.Netflix == '1'" href="https://www.netflix.com" target="_blank">
-                <img class="netflix1-1-icon" alt="" src="./../../assets/images/landing-page/netflix1-1@2x.png"/>
+                <img class="small-icon" alt="" src="./../../assets/images/landing-page/netflix1-1@2x.png"/>
               </a>
               <a *ngIf="movieDetail.Disney == 1 && subs.Disney == '1'" href="https://www.disneyplus.com" target="_blank">
-                <img class="disney-1-icon" alt="" src="./../../assets/images/landing-page/disney-1@2x.png"/>
+                <img class="small-icon" alt="" src="./../../assets/images/landing-page/disney-1@2x.png"/>
               </a>
               <a *ngIf="movieDetail.HBO == 1 && subs.HBO == '1'" href="https://www.hbo.com" target="_blank">
-                <img class="hbo-max-1590590561-1-icon" alt="" src="./../../assets/images/landing-page/hbomax1590590561-1@2x.png"/>
+                <img class="small-icon" alt="" src="./../../assets/images/landing-page/hbomax1590590561-1@2x.png"/>
               </a>
-              <a *ngIf="movieDetail.Prime == 1 && subs.Prime == '1'" href="https://www.amazon.com/primevideo" target="_blank">
-                <img class="prime-1-icon" alt="" src="./../../assets/images/landing-page/prime-1@2x.png"/>
+              <a *ngIf="movieDetail.Prime == 1 && subs.Amazon == '1'" href="https://www.amazon.com/primevideo" target="_blank">
+                <img class="small-icon" alt="" src="./../../assets/images/landing-page/prime-1@2x.png"/>
               </a>
           </ng-container>
           <ng-template #noPlatforms><label class="not-available">No platforms available</label></ng-template>

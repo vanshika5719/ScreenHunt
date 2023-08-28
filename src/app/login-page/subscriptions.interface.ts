@@ -5,5 +5,5 @@ export interface subscriptions  {
     Disney?: string,
     HBO?: string,
     Netflix?: string,
-    Prime?: string,
+    Amazon?: string,
 }

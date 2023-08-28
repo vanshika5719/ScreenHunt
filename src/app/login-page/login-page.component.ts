@@ -18,7 +18,7 @@ export class LoginPageComponent {
     Disney: '0',
     HBO: '0',
     Netflix: '0',
-    Prime: '0',
+    Amazon: '0',
   }
 
   constructor(private service: AuthService, private router: Router,private sharedService: SharedService) {}
@@ -49,7 +49,7 @@ export class LoginPageComponent {
            localStorage.setItem('Disney',res.result[0].Disney);
            localStorage.setItem('Netflix',res.result[0].Netflix);
            localStorage.setItem('HBO',res.result[0].HBO);
-           localStorage.setItem('Prime',res.result[0].Prime);
+           localStorage.setItem('Amazon',res.result[0].Amazon);
 
           this.subs.fname = res.result[0].fname;
           this.subs.lname = res.result[0].lname;
@@ -57,7 +57,7 @@ export class LoginPageComponent {
           this.subs.Disney = res.result[0].Disney;
           this.subs.Netflix =res.result[0].Netflix;
           this.subs.HBO =res.result[0].HBO;
-          this.subs.Prime =res.result[0].Prime;
+          this.subs.Amazon =res.result[0].Amazon;
           this.sharedService.changeSubscription(this.subs);
           this.router.navigate(['/search-page']).then(()=>{
           //window.location.reload();

@@ -13,7 +13,7 @@ export class SharedService {
     Disney: '0',
         HBO: '0',
         Netflix: '0',
-        Prime: '0',
+        Amazon: '0',
   }
   private idSource = new BehaviorSubject<number>(-1);
   private subscriptionsSource = new BehaviorSubject<subscriptions>(this.subs);

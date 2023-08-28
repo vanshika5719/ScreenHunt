@@ -33,7 +33,7 @@ export class SearchPageComponent implements OnInit {
         Disney: '0',
         HBO: '0',
         Netflix: '0',
-        Prime: '0',
+        Amazon: '0',
       }
      }
 
@@ -49,7 +49,7 @@ export class SearchPageComponent implements OnInit {
       this.subs.interest = localStorage.getItem('interest')?.toString();
       this.subs.Netflix = localStorage.getItem('Netflix')?.toString();
       this.subs.HBO = localStorage.getItem('HBO')?.toString();
-      this.subs.Prime = localStorage.getItem('Prime')?.toString();
+      this.subs.Amazon = localStorage.getItem('Amazon')?.toString();
       this.subs.Disney = localStorage.getItem('Disney')?.toString();
 
     }
