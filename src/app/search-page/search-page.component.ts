@@ -103,7 +103,7 @@ export class SearchPageComponent implements OnInit {
 
   logout() {
     localStorage.clear(); 
-    this.router.navigate(['/']); 
+    this.router.navigate(['/login']); 
   }
 
   // toSection3() {
