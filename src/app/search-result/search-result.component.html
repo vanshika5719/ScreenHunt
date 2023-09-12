@@ -18,7 +18,7 @@
       <label class="rating-data">{{movieDetail.Rating}}</label>
       <label class="platforms-available" htmlfor="platforms">Platforms Available:</label>
       <div class="platform-icon">
-          <ng-container *ngIf="movieDetail.Netflix == 1 || movieDetail.Disney == 1 || movieDetail.HBO == 1 || movieDetail.Prime == 1; else noPlatforms">
+          <ng-container *ngIf="(movieDetail.Netflix == 1 && subs.Netflix == '1')  || (movieDetail.Disney == 1 && subs.Disney == '1') || ( movieDetail.HBO == 1 && subs.HBO == '1' ) || ( movieDetail.Prime == 1 && subs.Amazon == '1'); else noPlatforms">
             <a *ngIf="movieDetail.Netflix == 1 && subs.Netflix == '1'" href="https://www.netflix.com" target="_blank">
                 <img class="small-icon" alt="" src="./../../assets/images/landing-page/netflix1-1@2x.png"/>
               </a>
